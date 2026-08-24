@@ -81,7 +81,7 @@ footer{background:#351522;color:#fff;text-align:center;padding:28px 6%}
 
 <script>
 const products=[
- {name:"ফুলেল ডিজাইনের ৩ পিস",price:1290,emoji:"🌺"},
+{name:"ফুলের ডিজাইনের ৩ পিস",price:1290,emoji:"🌸",image:"WhatsApp Image 2026-08-25 at 3.01.36 AM.jpeg"},
  {name:"এলিগ্যান্ট কটন ৩ পিস",price:1490,emoji:"🌸"},
  {name:"প্রিমিয়াম প্রিন্টেড ৩ পিস",price:1690,emoji:"👗"},
  {name:"উৎসব স্পেশাল ৩ পিস",price:1890,emoji:"💐"},
@@ -92,7 +92,7 @@ const products=[
 const grid=document.getElementById("productGrid");
 const select=document.getElementById("productSelect");
 products.forEach((p,i)=>{
- grid.innerHTML+=`<div class="card"><div class="pic">${p.emoji}</div><div class="card-body"><h3>${p.name}</h3><div class="price">৳ ${p.price.toLocaleString('bn-BD')}</div><button onclick="choose(${i})">হোয়াটসঅ্যাপে অর্ডার</button></div></div>`;
+ grid.innerHTML+=`<div class="card"><div class="pic"><img src="${p.image}" alt="${p.name}"></div><div class="card-body"><h3>${p.name}</h3><div class="price">৳ ${p.price.toLocaleString()}</div></div></div>`;
  select.innerHTML+=`<option value="${i}">${p.name} — ৳ ${p.price}</option>`;
 });
 
