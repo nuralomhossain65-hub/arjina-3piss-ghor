@@ -3,75 +3,300 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>৩ পিস ঘর | অনলাইন ৩পিস শপ</title>
+
+<title>🌸 ৩ পিস ঘর | অনলাইন ৩ পিস শপ</title>
+
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,"Noto Sans Bengali",sans-serif;background:#fff8fb;color:#29202a;line-height:1.6}
-header{background:linear-gradient(135deg,#8f245c,#d94b82);color:white;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10;box-shadow:0 3px 15px #0002}
-.logo{font-size:28px;font-weight:800}.wa{background:#25d366;color:#fff;padding:10px 16px;border-radius:25px;text-decoration:none;font-weight:bold}
-.hero{padding:70px 6%;background:linear-gradient(120deg,#ffe0eb,#fff);display:flex;align-items:center;justify-content:space-between;gap:30px}
-.hero-text{max-width:650px}.hero h1{font-size:46px;color:#8f245c;margin-bottom:12px}.hero p{font-size:19px;color:#5d4a55}
-.btn{display:inline-block;margin-top:22px;background:#8f245c;color:#fff;padding:13px 24px;border-radius:28px;text-decoration:none;font-weight:bold;border:0;cursor:pointer}
-.hero-art{font-size:130px;background:#fff;border-radius:50%;width:260px;height:260px;display:flex;align-items:center;justify-content:center;box-shadow:0 15px 40px #8f245c22}
-section{padding:55px 6%}.title{text-align:center;margin-bottom:30px}.title h2{font-size:32px;color:#8f245c}.title p{color:#76666e}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
-.card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 5px 22px #5d28401a;border:1px solid #f1dce5}
-.pic{height:240px;background:linear-gradient(135deg,#f8b4cb,#fcebf2);display:flex;align-items:center;justify-content:center;font-size:95px}
-.card-body{padding:18px}.card h3{font-size:20px;margin-bottom:5px}.price{color:#8f245c;font-size:22px;font-weight:bold}.old{text-decoration:line-through;color:#999;font-size:14px;margin-left:6px}
-.card button{width:100%;margin-top:12px;padding:11px;border:0;border-radius:25px;background:#25d366;color:white;font-weight:bold;cursor:pointer}
-.info{background:#fff;border-radius:20px;padding:28px;box-shadow:0 5px 22px #0000000b}
-.order{max-width:650px;margin:auto;background:#fff;padding:30px;border-radius:20px;box-shadow:0 5px 22px #00000012}
-input,textarea,select{width:100%;padding:13px;margin:8px 0 14px;border:1px solid #ddd;border-radius:10px;font-size:16px}
-footer{background:#351522;color:#fff;text-align:center;padding:28px 6%}
-.cart{position:fixed;right:20px;bottom:20px;background:#8f245c;color:#fff;padding:14px 18px;border-radius:30px;box-shadow:0 5px 20px #0004;z-index:20}
-@media(max-width:700px){.hero{padding:45px 6%;flex-direction:column;text-align:center}.hero h1{font-size:35px}.hero-art{width:190px;height:190px;font-size:90px}.logo{font-size:22px}}
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial,"Noto Sans Bengali",sans-serif;
+  background:#fff8fb;
+  color:#29202a;
+  line-height:1.6;
+}
+
+header{
+  background:#d9366e;
+  color:white;
+  padding:16px 25px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+
+.logo{
+  font-size:25px;
+  font-weight:bold;
+}
+
+.hero{
+  text-align:center;
+  padding:55px 20px 35px;
+  background:linear-gradient(135deg,#ffe0eb,#fff);
+}
+
+.hero h1{
+  color:#8f245c;
+  font-size:32px;
+  margin-bottom:8px;
+}
+
+.hero p{
+  color:#76666e;
+}
+
+section{
+  padding:40px 6%;
+}
+
+.title{
+  text-align:center;
+  color:#8f245c;
+  font-size:28px;
+  margin-bottom:30px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:22px;
+}
+
+.card{
+  background:white;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 5px 20px #d8cbd1;
+  border:1px solid #f1dce5;
+}
+
+.pic{
+  height:260px;
+  background:#fcecf3;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+
+.pic img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  cursor:pointer;
+  transition:transform .25s;
+}
+
+.pic img:hover{
+  transform:scale(1.03);
+}
+
+.emoji{
+  font-size:90px;
+}
+
+.card-body{
+  padding:18px;
+}
+
+.card-body h3{
+  color:#8f245c;
+  font-size:20px;
+  margin-bottom:6px;
+}
+
+.price{
+  color:#d9366e;
+  font-size:21px;
+  font-weight:bold;
+  margin-bottom:12px;
+}
+
+.select-btn{
+  width:100%;
+  padding:11px;
+  border:0;
+  border-radius:10px;
+  background:#d9366e;
+  color:white;
+  font-size:16px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.select-btn:hover{
+  background:#b92559;
+}
+
+.cart{
+  margin:20px 6%;
+  background:#8f245c;
+  color:white;
+  padding:13px 20px;
+  border-radius:12px;
+  text-align:center;
+  font-weight:bold;
+}
+
+.order{
+  background:#fff;
+  margin:30px 6%;
+  padding:30px;
+  border-radius:18px;
+  box-shadow:0 5px 20px #ded2d7;
+}
+
+.order h2{
+  text-align:center;
+  color:#8f245c;
+  margin-bottom:20px;
+}
+
+input,textarea,select{
+  width:100%;
+  padding:12px;
+  margin-bottom:14px;
+  border:1px solid #ddd;
+  border-radius:9px;
+  font-size:16px;
+}
+
+.order-btn{
+  width:100%;
+  padding:14px;
+  border:0;
+  border-radius:10px;
+  background:#20b957;
+  color:white;
+  font-size:18px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+footer{
+  background:#8f245c;
+  color:white;
+  text-align:center;
+  padding:25px;
+  margin-top:40px;
+}
+
+/* বড় ছবি দেখানোর popup */
+.modal{
+  display:none;
+  position:fixed;
+  z-index:999;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,.88);
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+
+.modal img{
+  max-width:95%;
+  max-height:90%;
+  object-fit:contain;
+  border-radius:10px;
+}
+
+.close{
+  position:absolute;
+  top:15px;
+  right:25px;
+  color:white;
+  font-size:42px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+@media(max-width:600px){
+  .hero h1{
+    font-size:26px;
+  }
+
+  .grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+  }
+
+  .pic{
+    height:190px;
+  }
+
+  .card-body{
+    padding:12px;
+  }
+
+  .card-body h3{
+    font-size:16px;
+  }
+
+  .price{
+    font-size:18px;
+  }
+
+  .logo{
+    font-size:20px;
+  }
+}
 </style>
 </head>
+
 <body>
+
 <header>
   <div class="logo">🌸 ৩ পিস ঘর</div>
-  <a class="wa" href="https://wa.me/8801612999832" target="_blank">হোয়াটসঅ্যাপে অর্ডার</a>
+  <div>🛒 নির্বাচিত: <span id="count">0</span></div>
 </header>
 
 <div class="hero">
-  <div class="hero-text">
-    <h1>স্টাইলিশ ৩ পিস, এখন আপনার ঘরে</h1>
-    <p>সুন্দর ডিজাইন, মানসম্মত কাপড় এবং সাশ্রয়ী দামে পছন্দের ৩ পিস অর্ডার করুন।</p>
-    <a class="btn" href="#products">পণ্য দেখুন</a>
-  </div>
-  <div class="hero-art">👗</div>
+  <h1>আমাদের ৩ পিস কালেকশন</h1>
+  <p>পছন্দের পোশাকটি বেছে নিয়ে হোয়াটসঅ্যাপে অর্ডার করুন</p>
 </div>
 
-<section id="products">
-  <div class="title"><h2>আমাদের ৩ পিস কালেকশন</h2><p>পছন্দের পোশাকটি বেছে নিয়ে হোয়াটসঅ্যাপে অর্ডার করুন</p></div>
-  <div class="grid" id="productGrid"></div>
-</section>
-
 <section>
-  <div class="title"><h2>কেন আমাদের কাছ থেকে কিনবেন?</h2></div>
-  <div class="grid">
-    <div class="info"><h3>✨ সুন্দর ডিজাইন</h3><p>নতুন ও আকর্ষণীয় ডিজাইনের ৩ পিস কালেকশন।</p></div>
-    <div class="info"><h3>🚚 সহজ ডেলিভারি</h3><p>আপনার ঠিকানায় অর্ডার পৌঁছে দেওয়ার ব্যবস্থা।</p></div>
-    <div class="info"><h3>💳 সহজ অর্ডার</h3><p>হোয়াটসঅ্যাপে মেসেজ দিয়েই অর্ডার করতে পারবেন।</p></div>
-  </div>
+
+<h2 class="title">✨ সুন্দর ৩ পিস কালেকশন ✨</h2>
+
+<div class="grid" id="productGrid"></div>
+
 </section>
 
-<section id="order">
-  <div class="title"><h2>অর্ডার করুন</h2><p>তথ্য পূরণ করে অর্ডার পাঠান</p></div>
-  <div class="order">
-    <label>আপনার নাম</label>
-    <input id="name" placeholder="নাম লিখুন">
-    <label>মোবাইল নম্বর</label>
-    <input id="phone" placeholder="মোবাইল নম্বর লিখুন">
-    <label>ডেলিভারি ঠিকানা</label>
-    <textarea id="address" rows="4" placeholder="সম্পূর্ণ ঠিকানা লিখুন"></textarea>
-    <label>পছন্দের পণ্য</label>
-    <select id="productSelect"></select>
-    <button class="btn" style="width:100%" onclick="sendOrder()">হোয়াটসঅ্যাপে অর্ডার পাঠান</button>
-  </div>
-</section>
+<div class="cart">
+  🛒 নির্বাচিত পণ্য: <span id="count2">0</span>
+</div>
 
-<div class="cart">🛒 নির্বাচিত: <span id="count">0</span></div>
+<div class="order">
+
+<h2>📦 অর্ডার করুন</h2>
+
+<select id="productSelect">
+  <option value="">পণ্য নির্বাচন করুন</option>
+</select>
+
+<input id="name" type="text" placeholder="আপনার নাম">
+
+<input id="phone" type="tel" placeholder="মোবাইল নম্বর">
+
+<textarea id="address" rows="4" placeholder="সম্পূর্ণ ঠিকানা"></textarea>
+
+<button class="order-btn" onclick="sendOrder()">
+  📱 WhatsApp-এ অর্ডার করুন
+</button>
+
+</div>
 
 <footer>
   <h3>🌸 ৩ পিস ঘর</h3>
@@ -79,30 +304,174 @@ footer{background:#351522;color:#fff;text-align:center;padding:28px 6%}
   <p>© ২০২৬ ৩ পিস ঘর — সর্বস্বত্ব সংরক্ষিত</p>
 </footer>
 
+<!-- বড় ছবি দেখানোর popup -->
+<div class="modal" id="imageModal" onclick="closeImage()">
+  <span class="close">&times;</span>
+  <img id="bigImage" src="" alt="বড় ছবি" onclick="event.stopPropagation()">
+</div>
+
 <script>
-const products=[
-{name:"ফুলের ডিজাইনের ৩ পিস",price:1290,emoji:"🌸",image:"WhatsApp Image 2026-08-25 at 3.01.36 AM.jpeg"},
- {name:"এলিগ্যান্ট কটন ৩ পিস",price:1490,emoji:"🌸"},
- {name:"প্রিমিয়াম প্রিন্টেড ৩ পিস",price:1690,emoji:"👗"},
- {name:"উৎসব স্পেশাল ৩ পিস",price:1890,emoji:"💐"},
- {name:"আরামদায়ক লন ৩ পিস",price:1390,emoji:"🌷"},
- {name:"নতুন কালেকশন ৩ পিস",price:1590,emoji:"🌹"}
+
+const products = [
+
+{
+  name:"ফুলের ডিজাইনের ৩ পিস",
+  price:1290,
+  emoji:"🌸",
+  image:"WhatsApp Image 2026-08-25 at 3.01.36 AM.jpeg"
+},
+
+{
+  name:"এলিগ্যান্ট কটন ৩ পিস",
+  price:1490,
+  emoji:"🌺"
+},
+
+{
+  name:"প্রিমিয়াম প্রিন্টেড ৩ পিস",
+  price:1690,
+  emoji:"🔥"
+},
+
+{
+  name:"উৎসব স্পেশাল ৩ পিস",
+  price:1890,
+  emoji:"💛"
+},
+
+{
+  name:"আরামদায়ক লন ৩ পিস",
+  price:1390,
+  emoji:"🌷"
+},
+
+{
+  name:"নতুন কালেকশন ৩ পিস",
+  price:1590,
+  emoji:"🌹"
+}
+
 ];
 
 const grid=document.getElementById("productGrid");
 const select=document.getElementById("productSelect");
+
 products.forEach((p,i)=>{
-grid.innerHTML += `<div class="card"><div class="pic"><img src="${p.image}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover;cursor:pointer" onclick="openImage('${p.image}')"></div><div class="card-body"><h3>${p.name}</h3><div class="price">৳ ${p.price.toLocaleString()}</div></div></div>`;
-function choose(i){select.value=i;count++;document.getElementById("count").textContent=count;document.getElementById("order").scrollIntoView({behavior:"smooth"});}
-function sendOrder(){
- const name=document.getElementById("name").value.trim();
- const phone=document.getElementById("phone").value.trim();
- const address=document.getElementById("address").value.trim();
- const p=products[Number(select.value)];
- if(!name||!phone||!address){alert("দয়া করে নাম, মোবাইল নম্বর ও ঠিকানা পূরণ করুন।");return;}
- const msg=`নতুন অর্ডার%0A%0Aপণ্যের নাম: ${p.name}%0Aদাম: ৳ ${p.price}%0A%0Aক্রেতার নাম: ${name}%0Aমোবাইল: ${phone}%0Aঠিকানা: ${address}`;
- window.open(`https://wa.me/8801612999832?text=${msg}`,"_blank");
+
+  let picture="";
+
+  if(p.image){
+    picture=
+      `<img src="${p.image}"
+       alt="${p.name}"
+       onclick="openImage('${p.image}')">`;
+  }else{
+    picture=`<div class="emoji">${p.emoji}</div>`;
+  }
+
+  grid.innerHTML += `
+    <div class="card">
+
+      <div class="pic">
+        ${picture}
+      </div>
+
+      <div class="card-body">
+
+        <h3>${p.name}</h3>
+
+        <div class="price">
+          ৳ ${p.price.toLocaleString("bn-BD")}
+        </div>
+
+        <button class="select-btn"
+          onclick="choose(${i})">
+          🛒 নির্বাচন করুন
+        </button>
+
+      </div>
+
+    </div>
+  `;
+
+  select.innerHTML += `
+    <option value="${i}">
+      ${p.name} — ৳ ${p.price}
+    </option>
+  `;
+
+});
+
+
+let count=0;
+
+function choose(i){
+
+  select.value=i;
+
+  count++;
+
+  document.getElementById("count").textContent=count;
+  document.getElementById("count2").textContent=count;
+
+  document.querySelector(".order")
+    .scrollIntoView({
+      behavior:"smooth"
+    });
 }
+
+
+function openImage(src){
+
+  document.getElementById("bigImage").src=src;
+
+  document.getElementById("imageModal").style.display="flex";
+
+}
+
+
+function closeImage(){
+
+  document.getElementById("imageModal").style.display="none";
+
+  document.getElementById("bigImage").src="";
+
+}
+
+
+function sendOrder(){
+
+  const name=document.getElementById("name").value.trim();
+  const phone=document.getElementById("phone").value.trim();
+  const address=document.getElementById("address").value.trim();
+
+  const index=Number(select.value);
+
+  if(!name || !phone || !address || select.value===""){
+    alert("দয়া করে পণ্য, নাম, মোবাইল নম্বর ও ঠিকানা পূরণ করুন।");
+    return;
+  }
+
+  const p=products[index];
+
+  const msg=
+`🌸 নতুন অর্ডার
+
+পণ্যের নাম: ${p.name}
+দাম: ৳${p.price}
+
+ক্রেতার নাম: ${name}
+মোবাইল: ${phone}
+ঠিকানা: ${address}`;
+
+  window.open(
+    "https://wa.me/8801612999832?text="+encodeURIComponent(msg),
+    "_blank"
+  );
+
+}
+
 </script>
+
 </body>
 </html>
